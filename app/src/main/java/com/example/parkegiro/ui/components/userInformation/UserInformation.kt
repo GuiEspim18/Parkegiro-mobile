@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.parkegiro.R
 import com.example.parkegiro.ui.components.buttons.IconButton
+import com.example.parkegiro.ui.theme.DarkBlue
 import com.example.parkegiro.ui.theme.SecondaryBlue
 
 @Composable
@@ -32,7 +33,8 @@ fun UserInformation(userName: String) {
         )
         Text(
             text = "Olá $userName!",
-            modifier = Modifier.padding(end = 15.dp)
+            modifier = Modifier.padding(end = 15.dp),
+            color = DarkBlue
         )
         UserPhoto()
     }
