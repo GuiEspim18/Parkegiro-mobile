@@ -234,7 +234,7 @@ fun Home() {
                     ) {
                         Text(
                             text = "Ver Mais",
-                            color = White`
+                            color = White
                         )
                     }
                 }
