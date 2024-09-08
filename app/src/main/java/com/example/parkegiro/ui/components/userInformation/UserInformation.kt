@@ -24,13 +24,6 @@ fun UserInformation(userName: String) {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        IconButton(
-            icon = R.drawable.drop_down,
-            modifier = Modifier.width(25.dp).height(25.dp),
-            iconSize = 15.dp,
-            iconColor = SecondaryBlue,
-            onClick = { /*TODO*/ }
-        )
         Text(
             text = "Olá $userName!",
             modifier = Modifier.padding(end = 15.dp),

@@ -55,7 +55,7 @@ fun Home() {
                             .padding(10.dp),
                     ) {
                         Text(
-                            text = "25 Vagas Livres",
+                            text = "Total de 25 vagas",
                             modifier = Modifier
                                 .background(SecondaryBlue),
                             color = White,
