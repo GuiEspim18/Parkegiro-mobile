@@ -44,5 +44,10 @@ fun NavMenu() {
             onClick = { /*TODO*/ },
             modifier = Modifier.padding(horizontal = 15.dp)
         )
+        IconButton(
+            icon = R.drawable.configurations,
+            onClick = { /*TODO*/ },
+            modifier = Modifier.padding(horizontal = 15.dp)
+        )
     }
 }
