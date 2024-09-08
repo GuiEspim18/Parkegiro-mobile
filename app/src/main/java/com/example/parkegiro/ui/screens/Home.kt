@@ -232,7 +232,10 @@ fun Home() {
                         shape = RoundedCornerShape(10.dp),
                         onClick = { /*TODO*/ }
                     ) {
-                        Text(text = "Ver Mais")
+                        Text(
+                            text = "Ver Mais",
+                            color = White`
+                        )
                     }
                 }
             }
