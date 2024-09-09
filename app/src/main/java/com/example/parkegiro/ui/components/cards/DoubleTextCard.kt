@@ -23,7 +23,7 @@ import com.example.parkegiro.ui.theme.SoftGray
 import com.example.parkegiro.ui.theme.White
 
 @Composable
-fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = SoftGray, textColor: Color = MainBlue, firstTextSize: TextUnit = 25.sp, secondTextSize: TextUnit = 20.sp ) {
+fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = SoftGray, textColor: Color = MainBlue, firstTextSize: TextUnit = 25.sp, secondTextSize: TextUnit = 20.sp) {
     Card(
         modifier = Modifier
             .fillMaxWidth(),
