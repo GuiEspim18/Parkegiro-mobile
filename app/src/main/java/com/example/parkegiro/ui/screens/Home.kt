@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.parkegiro.R
-import com.example.parkegiro.ui.components.buttons.MainBlueButton
+import com.example.parkegiro.ui.components.buttons.SecondaryBlueButton
 import com.example.parkegiro.ui.components.cards.DoubleTextCard
 import com.example.parkegiro.ui.components.contentHolder.ContentHolder
 import com.example.parkegiro.ui.components.headers.Header
@@ -60,7 +60,7 @@ fun Home() {
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.Center
                         ) {
-                            MainBlueButton(text = "Ver Mais")
+                            SecondaryBlueButton(text = "Ver Mais")
                         }
                     }
                     Spacer(modifier = Modifier.height(20.dp))
@@ -72,7 +72,7 @@ fun Home() {
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.Center
                         ) {
-                            MainBlueButton(text = "Ver Mais")
+                            SecondaryBlueButton(text = "Ver Mais")
                         }
                     }
                 }

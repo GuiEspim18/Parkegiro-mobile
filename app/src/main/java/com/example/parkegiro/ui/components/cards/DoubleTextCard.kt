@@ -17,13 +17,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.parkegiro.ui.theme.Gray
 import com.example.parkegiro.ui.theme.MainBlue
 import com.example.parkegiro.ui.theme.SecondaryBlue
 import com.example.parkegiro.ui.theme.SoftGray
 import com.example.parkegiro.ui.theme.White
 
 @Composable
-fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = SoftGray, textColor: Color = MainBlue, firstTextSize: TextUnit = 25.sp, secondTextSize: TextUnit = 20.sp) {
+fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = Gray, textColor: Color = MainBlue, firstTextSize: TextUnit = 25.sp, secondTextSize: TextUnit = 20.sp) {
     Card(
         modifier = Modifier
             .fillMaxWidth(),
