@@ -36,7 +36,7 @@ fun Home() {
             LazyColumn (
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(top = 30.dp, end = 15.dp, start = 15.dp)
+                    .padding(top = 5.dp, end = 15.dp, start = 15.dp)
             ) {
                 item {
                     DoubleTextCard(firstText = "Total de 25 vagas", secondText = "18 vagas oculpadas", cardColor = SecondaryBlue, textColor = White)
@@ -55,6 +55,18 @@ fun Home() {
                         Spacer(modifier = Modifier.height(20.dp))
                         DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
 
+                        Spacer(modifier = Modifier.height(20.dp))
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.Center
+                        ) {
+                            MainBlueButton(text = "Ver Mais")
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(20.dp))
+                    ContentHolder(title = "Faturamento Diário", icon = R.drawable.money) {
+                        Spacer(modifier = Modifier.height(20.dp))
+                        DoubleTextCard(firstText = "R$: 250,00", secondText = "Entradas: 18  Saídas: 18")
                         Spacer(modifier = Modifier.height(20.dp))
                         Row(
                             modifier = Modifier.fillMaxWidth(),
