@@ -22,10 +22,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.parkegiro.R
 import com.example.parkegiro.ui.components.buttons.MainBlueButton
+import com.example.parkegiro.ui.components.cards.DoubleTextCard
 import com.example.parkegiro.ui.components.headers.Header
 import com.example.parkegiro.ui.components.icon.Icon
 import com.example.parkegiro.ui.components.menus.NavMenu
@@ -50,42 +52,7 @@ fun Home() {
                     .fillMaxSize()
                     .padding(top = 30.dp, end = 15.dp, start = 15.dp)
             ) {
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth(),
-                    colors = CardDefaults.cardColors(
-                        containerColor = SecondaryBlue,
-                    ),
-                    shape = RoundedCornerShape(10.dp),
-                    elevation = CardDefaults.cardElevation(5.dp)
-
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .background(Color.Transparent)
-                            .padding(10.dp),
-                    ) {
-                        Text(
-                            text = "Total de 25 vagas",
-                            modifier = Modifier
-                                .background(SecondaryBlue),
-                            color = White,
-                            fontSize = 25.sp
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Divider(modifier = Modifier
-                            .height(1.dp), color = White)
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Text(
-                            text = "18 Vagas Oculpadas",
-                            modifier = Modifier
-                                .background(SecondaryBlue),
-                            color = White,
-                            fontSize = 25.sp
-                        )
-                    }
-
-                }
+                DoubleTextCard(firstText = "Total de 25 vagas", secondText = "18 vagas oculpadas", cardColor = SecondaryBlue, textColor = White)
                 Spacer(modifier = Modifier.height(20.dp))
                 Divider(
                     modifier = Modifier.height(1.dp),
@@ -105,122 +72,11 @@ fun Home() {
                     )
                 }
                 Spacer(modifier = Modifier.height(20.dp))
-                Card (
-                    modifier = Modifier
-                        .fillMaxWidth(),
-                    colors = CardDefaults.cardColors(
-                        containerColor = SoftGray
-                    ),
-                    shape = RoundedCornerShape(10.dp),
-                    elevation = CardDefaults.cardElevation(10.dp)
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .background(Color.Transparent)
-                            .padding(10.dp)
-                    ) {
-                        Text(
-                            text = "Peugeot 308 THP - Branco",
-                            color = MainBlue
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Divider(
-                            modifier = Modifier
-                                .height(1.dp),
-                            color = MainBlue
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Row {
-                            Text(
-                                text = "Placa: ",
-                                fontWeight = FontWeight.Bold,
-                                color = MainBlue
-                            )
-                            Text(
-                                text = "GBR-9F90",
-                                color = MainBlue
-                            )
-                        }
-                    }
-                }
+                DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
                 Spacer(modifier = Modifier.height(20.dp))
-                Card (
-                    modifier = Modifier
-                        .fillMaxWidth(),
-                    colors = CardDefaults.cardColors(
-                        containerColor = SoftGray
-                    ),
-                    shape = RoundedCornerShape(10.dp),
-                    elevation = CardDefaults.cardElevation(10.dp)
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .background(Color.Transparent)
-                            .padding(10.dp)
-                    ) {
-                        Text(
-                            text = "Peugeot 308 THP - Branco",
-                            color = MainBlue
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Divider(
-                            modifier = Modifier
-                                .height(1.dp),
-                            color = MainBlue
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Row {
-                            Text(
-                                text = "Placa: ",
-                                fontWeight = FontWeight.Bold,
-                                color = MainBlue
-                            )
-                            Text(
-                                text = "GBR-9F90",
-                                color = MainBlue
-                            )
-                        }
-                    }
-                }
+                DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
                 Spacer(modifier = Modifier.height(20.dp))
-                Card (
-                    modifier = Modifier
-                        .fillMaxWidth(),
-                    colors = CardDefaults.cardColors(
-                        containerColor = SoftGray
-                    ),
-                    shape = RoundedCornerShape(10.dp),
-                    elevation = CardDefaults.cardElevation(10.dp)
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .background(Color.Transparent)
-                            .padding(10.dp)
-                    ) {
-                        Text(
-                            text = "Peugeot 308 THP - Branco",
-                            color = MainBlue
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Divider(
-                            modifier = Modifier
-                                .height(1.dp),
-                            color = MainBlue
-                        )
-                        Spacer(modifier = Modifier.height(10.dp))
-                        Row {
-                            Text(
-                                text = "Placa: ",
-                                fontWeight = FontWeight.Bold,
-                                color = MainBlue
-                            )
-                            Text(
-                                text = "GBR-9F90",
-                                color = MainBlue
-                            )
-                        }
-                    }
-                }
+                DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
                 Spacer(modifier = Modifier.height(20.dp))
                 Row(
                     modifier = Modifier.fillMaxWidth(),
