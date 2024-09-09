@@ -25,6 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.parkegiro.R
+import com.example.parkegiro.ui.components.buttons.MainBlueButton
 import com.example.parkegiro.ui.components.headers.Header
 import com.example.parkegiro.ui.components.icon.Icon
 import com.example.parkegiro.ui.components.menus.NavMenu
@@ -225,18 +226,7 @@ fun Home() {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.Center
                 ) {
-                    Button(
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = MainBlue
-                        ),
-                        shape = RoundedCornerShape(10.dp),
-                        onClick = { /*TODO*/ }
-                    ) {
-                        Text(
-                            text = "Ver Mais",
-                            color = White
-                        )
-                    }
+                    MainBlueButton(text = "Ver Mais")
                 }
             }
         }
