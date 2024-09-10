@@ -9,13 +9,17 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.parkegiro.R
 import com.example.parkegiro.ui.components.buttons.SecondaryBlueButton
 import com.example.parkegiro.ui.components.cards.DoubleTextCard
 import com.example.parkegiro.ui.components.contentHolder.ContentHolder
+import com.example.parkegiro.ui.theme.MainBlue
 import com.example.parkegiro.ui.theme.SecondaryBlue
 import com.example.parkegiro.ui.theme.White
 
@@ -28,6 +32,13 @@ fun Home() {
                 .padding(top = 5.dp, end = 15.dp, start = 15.dp)
         ) {
             item {
+                Text(
+                    text = "WM Park",
+                    color = MainBlue,
+                    fontSize = 30.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Spacer(modifier = Modifier.height(20.dp))
                 DoubleTextCard(
                     firstText = "Total de 25 vagas",
                     secondText = "18 vagas oculpadas",
