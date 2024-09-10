@@ -33,8 +33,11 @@ fun Screen(navController: NavHostController) {
                 composable("home") {
                     Home()
                 }
+                composable("parked-cars") {
+                    ParkedCars()
+                }
             }
         }
-        NavMenu()
+        NavMenu(navController)
     }
 }

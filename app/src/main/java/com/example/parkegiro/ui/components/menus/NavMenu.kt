@@ -10,12 +10,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.example.parkegiro.R
 import com.example.parkegiro.ui.components.buttons.IconButton
 import com.example.parkegiro.ui.theme.Gray
 
 @Composable
-fun NavMenu() {
+fun NavMenu(navController: NavController) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -26,12 +27,12 @@ fun NavMenu() {
     ) {
         IconButton(
             icon = R.drawable.home,
-            onClick = { /*TODO*/ },
+            onClick = { navController.navigate("home") },
             modifier = Modifier.padding(horizontal = 15.dp)
         )
         IconButton(
             icon = R.drawable.car,
-            onClick = { /*TODO*/ },
+            onClick = { navController.navigate("parked-cars") },
             modifier = Modifier.padding(horizontal = 15.dp)
         )
         IconButton(
