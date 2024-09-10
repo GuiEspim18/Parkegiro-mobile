@@ -10,7 +10,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.parkegiro.ui.screens.Home
+import androidx.navigation.compose.rememberNavController
 import com.example.parkegiro.ui.screens.Screen
 import com.example.parkegiro.ui.theme.ParkegiroTheme
 
@@ -24,17 +24,20 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Screen()
+                    val navController = rememberNavController()
+                    Screen(navController)
                 }
             }
         }
     }
 }
 
+@OptIn(ExperimentalAnimationApi::class)
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
     ParkegiroTheme {
-        Screen()
+        val navController = rememberNavController()
+        Screen(navController)
     }
 }

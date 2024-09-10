@@ -24,60 +24,70 @@ import com.example.parkegiro.ui.theme.White
 
 @Composable
 fun Home() {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(White)
-    ) {
-        Header()
-        Column(
-            modifier = Modifier.weight(1f)
+    Column{
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 5.dp, end = 15.dp, start = 15.dp)
         ) {
-            LazyColumn (
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(top = 5.dp, end = 15.dp, start = 15.dp)
-            ) {
-                item {
-                    DoubleTextCard(firstText = "Total de 25 vagas", secondText = "18 vagas oculpadas", cardColor = SecondaryBlue, textColor = White)
+            item {
+                DoubleTextCard(
+                    firstText = "Total de 25 vagas",
+                    secondText = "18 vagas oculpadas",
+                    cardColor = SecondaryBlue,
+                    textColor = White
+                )
+                Spacer(modifier = Modifier.height(20.dp))
+                ContentHolder(title = "Carros Estacionados", icon = R.drawable.car) {
+
                     Spacer(modifier = Modifier.height(20.dp))
-                    ContentHolder(title = "Carros Estacionados", icon = R.drawable.car) {
+                    DoubleTextCard(
+                        firstText = "Peugeot 308 THP - Branco",
+                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                    )
 
-                        Spacer(modifier = Modifier.height(20.dp))
-                        DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
+                    Spacer(modifier = Modifier.height(20.dp))
+                    DoubleTextCard(
+                        firstText = "Peugeot 308 THP - Branco",
+                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                    )
 
-                        Spacer(modifier = Modifier.height(20.dp))
-                        DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
+                    Spacer(modifier = Modifier.height(20.dp))
+                    DoubleTextCard(
+                        firstText = "Peugeot 308 THP - Branco",
+                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                    )
 
-                        Spacer(modifier = Modifier.height(20.dp))
-                        DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
+                    Spacer(modifier = Modifier.height(20.dp))
+                    DoubleTextCard(
+                        firstText = "Peugeot 308 THP - Branco",
+                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                    )
 
-                        Spacer(modifier = Modifier.height(20.dp))
-                        DoubleTextCard(firstText = "Peugeot 308 THP - Branco", secondText = "Placa: GBR-9F90  Entrada: 08:30")
-
-                        Spacer(modifier = Modifier.height(20.dp))
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.Center
-                        ) {
-                            SecondaryBlueButton(text = "Ver Mais")
-                        }
+                    Spacer(modifier = Modifier.height(20.dp))
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center
+                    ) {
+                        SecondaryBlueButton(text = "Ver Mais")
                     }
+                }
+                Spacer(modifier = Modifier.height(20.dp))
+                ContentHolder(title = "Faturamento Diário", icon = R.drawable.money) {
                     Spacer(modifier = Modifier.height(20.dp))
-                    ContentHolder(title = "Faturamento Diário", icon = R.drawable.money) {
-                        Spacer(modifier = Modifier.height(20.dp))
-                        DoubleTextCard(firstText = "R$: 250,00", secondText = "Entradas: 18  Saídas: 18")
-                        Spacer(modifier = Modifier.height(20.dp))
-                        Row(
-                            modifier = Modifier.fillMaxWidth(),
-                            horizontalArrangement = Arrangement.Center
-                        ) {
-                            SecondaryBlueButton(text = "Ver Mais")
-                        }
+                    DoubleTextCard(
+                        firstText = "R$: 250,00",
+                        secondText = "Entradas: 18  Saídas: 18"
+                    )
+                    Spacer(modifier = Modifier.height(20.dp))
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Center
+                    ) {
+                        SecondaryBlueButton(text = "Ver Mais")
                     }
                 }
             }
         }
-        NavMenu()
     }
 }
