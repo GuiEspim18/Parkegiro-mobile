@@ -6,10 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavController
-import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.parkegiro.ui.components.headers.Header
@@ -24,7 +21,7 @@ fun Screen(navController: NavHostController) {
             .fillMaxSize()
             .background(White)
     ) {
-        Header()
+        Header(navController)
         Column(modifier = Modifier.weight(1f)) {
             NavHost(
                 navController = navController,
@@ -44,6 +41,9 @@ fun Screen(navController: NavHostController) {
                 }
                 composable("configuration") {
                     Configuration()
+                }
+                composable("profile") {
+                    Profile()
                 }
             }
         }

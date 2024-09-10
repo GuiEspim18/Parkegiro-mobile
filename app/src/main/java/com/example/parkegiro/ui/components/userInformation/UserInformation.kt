@@ -1,26 +1,27 @@
 package com.example.parkegiro.ui.components.userInformation
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.parkegiro.R
-import com.example.parkegiro.ui.components.buttons.IconButton
 import com.example.parkegiro.ui.theme.DarkBlue
-import com.example.parkegiro.ui.theme.SecondaryBlue
 
 @Composable
-fun UserInformation(userName: String) {
+fun UserInformation(userName: String, onClick: (() -> Unit)? = null) {
     Row(
         modifier = Modifier
-            .fillMaxHeight(),
+            .fillMaxHeight()
+            .clickable {
+                if (onClick != null) {
+                    onClick()
+                }
+            },
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
