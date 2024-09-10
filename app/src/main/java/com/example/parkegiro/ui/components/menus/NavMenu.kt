@@ -37,7 +37,7 @@ fun NavMenu(navController: NavController) {
         )
         IconButton(
             icon = R.drawable.money,
-            onClick = { /*TODO*/ },
+            onClick = { navController.navigate("revenue") },
             modifier = Modifier.padding(horizontal = 15.dp)
         )
         IconButton(

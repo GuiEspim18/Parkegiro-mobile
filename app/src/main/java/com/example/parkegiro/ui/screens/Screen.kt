@@ -36,6 +36,15 @@ fun Screen(navController: NavHostController) {
                 composable("parked-cars") {
                     ParkedCars()
                 }
+                composable("revenue") {
+                    Revenue()
+                }
+                composable("employees") {
+                    Employees()
+                }
+                composable("configuration") {
+                    Configuration()
+                }
             }
         }
         NavMenu(navController)
