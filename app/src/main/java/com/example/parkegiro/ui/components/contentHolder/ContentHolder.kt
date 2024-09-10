@@ -17,12 +17,14 @@ import com.example.parkegiro.ui.components.icon.Icon
 import com.example.parkegiro.ui.theme.MainBlue
 
 @Composable
-fun ContentHolder(title: String, icon: Int? = null, content: @Composable () -> Unit) {
-    Divider(
-        modifier = Modifier.height(1.dp),
-        color = MainBlue
-    )
-    Spacer(modifier = Modifier.height(20.dp))
+fun ContentHolder(title: String, icon: Int? = null, divider: Boolean = true, content: @Composable () -> Unit) {
+    if (divider) {
+        Divider(
+            modifier = Modifier.height(1.dp),
+            color = MainBlue
+        )
+        Spacer(modifier = Modifier.height(20.dp))
+    }
     Row (
         verticalAlignment = Alignment.CenterVertically
     ) {

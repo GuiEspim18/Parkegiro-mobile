@@ -1,6 +1,5 @@
 package com.example.parkegiro.ui.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -17,8 +16,6 @@ import com.example.parkegiro.R
 import com.example.parkegiro.ui.components.buttons.SecondaryBlueButton
 import com.example.parkegiro.ui.components.cards.DoubleTextCard
 import com.example.parkegiro.ui.components.contentHolder.ContentHolder
-import com.example.parkegiro.ui.components.headers.Header
-import com.example.parkegiro.ui.components.menus.NavMenu
 import com.example.parkegiro.ui.theme.SecondaryBlue
 import com.example.parkegiro.ui.theme.White
 
