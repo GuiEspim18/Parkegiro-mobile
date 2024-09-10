@@ -42,12 +42,12 @@ fun NavMenu(navController: NavController) {
         )
         IconButton(
             icon = R.drawable.people,
-            onClick = { /*TODO*/ },
+            onClick = { navController.navigate("employees") },
             modifier = Modifier.padding(horizontal = 15.dp)
         )
         IconButton(
             icon = R.drawable.configurations,
-            onClick = { /*TODO*/ },
+            onClick = { navController.navigate("configuration") },
             modifier = Modifier.padding(horizontal = 15.dp)
         )
     }
