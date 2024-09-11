@@ -31,7 +31,7 @@ fun Screen(navController: NavHostController) {
                     Home()
                 }
                 composable("parked-cars") {
-                    ParkedCars()
+                    ParkingLot()
                 }
                 composable("revenue") {
                     Revenue()

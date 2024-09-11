@@ -46,7 +46,7 @@ fun Home() {
                     textColor = White
                 )
                 Spacer(modifier = Modifier.height(20.dp))
-                ContentHolder(title = "Carros Estacionados", icon = R.drawable.car) {
+                ContentHolder(title = "Pátio", icon = R.drawable.car) {
 
                     Spacer(modifier = Modifier.height(20.dp))
                     DoubleTextCard(

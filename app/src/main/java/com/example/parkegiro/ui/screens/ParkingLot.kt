@@ -14,9 +14,10 @@ import com.example.parkegiro.ui.theme.Orange
 import com.example.parkegiro.ui.theme.Red
 
 @Composable
-fun ParkedCars() {
+fun ParkingLot() {
     Column {
-        ScrollContentHolder(title = "Carros Estacionados", icon = R.drawable.car, divider = false) {
+        ScrollContentHolder(title = "Pátio", icon = R.drawable.car, divider = false) {
+
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
                 firstText = "GBR-9F90",
@@ -33,7 +34,7 @@ fun ParkedCars() {
 
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
-                firstText = " GBR-9F90",
+                firstText = "GBR-9F90",
                 secondText = "Entrada: 08:30",
                 actions = listOf(
                     {
@@ -47,7 +48,7 @@ fun ParkedCars() {
 
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
-                firstText = " GBR-9F90",
+                firstText = "GBR-9F90",
                 secondText = "Entrada: 08:30",
                 actions = listOf(
                     {
@@ -61,7 +62,7 @@ fun ParkedCars() {
 
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
-                firstText = " GBR-9F90",
+                firstText = "GBR-9F90",
                 secondText = "Entrada: 08:30",
                 actions = listOf(
                     {
@@ -75,7 +76,7 @@ fun ParkedCars() {
 
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
-                firstText = " GBR-9F90",
+                firstText = "GBR-9F90",
                 secondText = "Entrada: 08:30",
                 actions = listOf(
                     {
@@ -89,7 +90,7 @@ fun ParkedCars() {
 
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
-                firstText = " GBR-9F90",
+                firstText = "GBR-9F90",
                 secondText = "Entrada: 08:30",
                 actions = listOf(
                     {
@@ -103,7 +104,7 @@ fun ParkedCars() {
 
             Spacer(modifier = Modifier.height(20.dp))
             DoubleTextCard(
-                firstText = " GBR-9F90",
+                firstText = "GBR-9F90",
                 secondText = "Entrada: 08:30",
                 actions = listOf(
                     {
