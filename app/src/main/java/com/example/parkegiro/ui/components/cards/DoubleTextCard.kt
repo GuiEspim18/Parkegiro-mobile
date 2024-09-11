@@ -31,7 +31,7 @@ fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = Gra
         colors = CardDefaults.cardColors(
             containerColor = cardColor,
         ),
-        shape = RoundedCornerShape(10.dp),
+        shape = RoundedCornerShape(5.dp),
         elevation = CardDefaults.cardElevation(5.dp)
 
     ) {

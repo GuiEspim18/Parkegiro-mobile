@@ -15,7 +15,7 @@ fun SecondaryBlueButton(text: String, on_click: () -> Unit = { }) {
         colors = ButtonDefaults.buttonColors(
             containerColor = SecondaryBlue
         ),
-        shape = RoundedCornerShape(10.dp),
+        shape = RoundedCornerShape(5.dp),
         onClick = on_click
     ) {
         Text(
