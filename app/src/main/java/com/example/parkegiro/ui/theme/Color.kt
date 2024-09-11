@@ -12,3 +12,6 @@ val SoftBlue = Color(0xFF4782B9)
 val Gray = Color(0xFFD9D9D9)
 val SoftGray = Color(0xFFC0C0C0)
 val White = Color(0xFFF0F0F0)
+
+val Orange = Color(0xFFE68F10)
+val Red = Color(0xFFDD1515)

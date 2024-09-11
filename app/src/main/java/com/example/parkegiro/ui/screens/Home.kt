@@ -50,26 +50,26 @@ fun Home() {
 
                     Spacer(modifier = Modifier.height(20.dp))
                     DoubleTextCard(
-                        firstText = "Peugeot 308 THP - Branco",
-                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                        firstText = "GBR-9F90",
+                        secondText = "Entrada: 08:30"
                     )
 
                     Spacer(modifier = Modifier.height(20.dp))
                     DoubleTextCard(
-                        firstText = "Peugeot 308 THP - Branco",
-                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                        firstText = "GBR-9F90",
+                        secondText = "Entrada: 08:30"
                     )
 
                     Spacer(modifier = Modifier.height(20.dp))
                     DoubleTextCard(
-                        firstText = "Peugeot 308 THP - Branco",
-                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                        firstText = "GBR-9F90",
+                        secondText = "Entrada: 08:30"
                     )
 
                     Spacer(modifier = Modifier.height(20.dp))
                     DoubleTextCard(
-                        firstText = "Peugeot 308 THP - Branco",
-                        secondText = "Placa: GBR-9F90  Entrada: 08:30"
+                        firstText = "GBR-9F90",
+                        secondText = "Entrada: 08:30"
                     )
 
                     Spacer(modifier = Modifier.height(20.dp))
