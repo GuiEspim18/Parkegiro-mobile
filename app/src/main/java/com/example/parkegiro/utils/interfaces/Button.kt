@@ -1,6 +1,3 @@
 package com.example.parkegiro.utils.interfaces
 
-interface Button {
-    var text: String
-    var onClick: () -> Unit
-}
+data class Button(val text: String, val onClick: () -> Unit)
