@@ -22,7 +22,10 @@ fun NavButton(text: String, onClick: () -> Unit, selected: Boolean = false, modi
             containerColor = if (!selected) SoftGray else Gray
         ),
         shape = RoundedCornerShape(topStart = 5.dp, topEnd = 5.dp, bottomEnd = 0.dp, bottomStart = 0.dp),
-        modifier = Modifier.padding(0.dp).heightIn(max = 35.dp).then(modifier),
+        modifier = Modifier
+            .padding(0.dp)
+            .heightIn(max = 40.dp)
+            .then(modifier),
     ) {
         Text(
             text = text,
