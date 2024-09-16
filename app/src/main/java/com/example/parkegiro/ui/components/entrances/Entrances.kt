@@ -11,109 +11,33 @@ import com.example.parkegiro.ui.components.cards.DoubleTextCard
 import com.example.parkegiro.ui.components.content.Content
 import com.example.parkegiro.ui.theme.Orange
 import com.example.parkegiro.ui.theme.Red
+import com.example.parkegiro.ui.theme.White
 
 @Composable
 fun Entrances() {
     Content {
 
-        Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
+        var i: Int = 0
+
+        while (i < 6) {
+            Spacer(modifier = Modifier.height(20.dp))
+            DoubleTextCard(
+                firstText = "GBR-9F90",
+                secondText = "Entrada: 08:30",
+                cardColor = White,
+                actions = listOf(
+                    {
+                        IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
+                    },
+                    {
+                        IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
+                    }
+                )
             )
-        )
+            i++
+        }
 
         Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
-            )
-        )
 
-        Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
-            )
-        )
-
-        Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
-            )
-        )
-
-        Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
-            )
-        )
-
-        Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
-            )
-        )
-
-        Spacer(modifier = Modifier.height(20.dp))
-        DoubleTextCard(
-            firstText = "GBR-9F90",
-            secondText = "Entrada: 08:30",
-            actions = listOf(
-                {
-                    IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
-                },
-                {
-                    IconButton(icon = R.drawable.delete, iconSize = 19.dp, iconColor = Red, onClick = { /*TODO*/ })
-                }
-            )
-        )
-
-        Spacer(modifier = Modifier.height(20.dp))
     }
 }

@@ -34,7 +34,8 @@ fun Tabs(tabs: List<Tab>) {
         buttons.add(Button(tab.name, { content = tab.content }))
     }
     Column(
-        verticalArrangement = Arrangement.Top
+        verticalArrangement = Arrangement.Top,
+        modifier = Modifier.fillMaxSize()
     ){
 
         Row(
