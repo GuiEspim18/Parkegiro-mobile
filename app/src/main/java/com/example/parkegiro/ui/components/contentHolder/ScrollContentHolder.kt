@@ -27,7 +27,8 @@ fun ScrollContentHolder(
     title: String,
     icon: Int? = null,
     divider: Boolean = true,
-    content: @Composable () -> Unit
+    modifier: Modifier = Modifier,
+    content: @Composable () -> Unit,
 ) {
     if (divider) {
         Divider(
@@ -37,7 +38,9 @@ fun ScrollContentHolder(
         Spacer(modifier = Modifier.height(20.dp))
     }
     Column(
-        modifier = Modifier.padding(top = 5.dp)
+        modifier = modifier.then(
+            Modifier.padding(top = 5.dp)
+        )
     ) {
         LazyColumn(
             modifier = Modifier
@@ -45,7 +48,9 @@ fun ScrollContentHolder(
 
         ) {
             item {
-                Content {
+                Content(
+                    modifier = Modifier
+                ) {
                     Row(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
@@ -61,6 +66,8 @@ fun ScrollContentHolder(
                         )
                     }
                 }
+            }
+            item {
                 content()
             }
         }

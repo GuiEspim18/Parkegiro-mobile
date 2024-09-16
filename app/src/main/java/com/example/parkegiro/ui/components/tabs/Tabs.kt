@@ -2,16 +2,21 @@ package com.example.parkegiro.ui.components.tabs
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.parkegiro.ui.components.buttons.NavButtons
 import com.example.parkegiro.ui.theme.Gray
@@ -35,15 +40,16 @@ fun Tabs(tabs: List<Tab>) {
         verticalArrangement = Arrangement.Top,
         modifier = Modifier.fillMaxSize()
     ){
-
         Row(
-            modifier = Modifier.padding(horizontal = 5.dp)
+            modifier = Modifier
+                .padding(horizontal = 5.dp)
+                .fillMaxWidth()
         ){
             NavButtons(buttons = buttons)
         }
-        Column (
+        Box (
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxHeight()
                 .background(Gray)
         ) {
             content()
