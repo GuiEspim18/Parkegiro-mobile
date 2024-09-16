@@ -26,7 +26,7 @@ fun NavButtons(buttons: List<Button>) {
     ) {
         for (index in 0 until  buttons.size) {
             NavButton(
-                text = buttons.get(index).text + selected,
+                text = buttons.get(index).text,
                 onClick = {
                     selected = index
                     buttons.get(index).onClick()
