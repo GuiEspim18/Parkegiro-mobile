@@ -45,7 +45,6 @@ fun ScrollContentHolder(
         LazyColumn(
             modifier = Modifier
                 .fillMaxSize()
-
         ) {
             item {
                 Content(

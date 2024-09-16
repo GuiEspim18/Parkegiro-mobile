@@ -23,7 +23,9 @@ import com.example.parkegiro.utils.interfaces.Tab
 @Preview(showBackground = true)
 @Composable
 fun ParkingLot() {
-    Column {
+    Column(
+        modifier = Modifier.fillMaxSize()
+    ) {
         ScrollContentHolder(
             title = "Pátio",
             icon = R.drawable.car,
