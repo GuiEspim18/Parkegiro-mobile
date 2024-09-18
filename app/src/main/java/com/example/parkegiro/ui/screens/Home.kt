@@ -45,7 +45,7 @@ fun Home() {
                     DoubleTextCard(
                         firstText = "Total de 25 vagas",
                         secondText = "18 vagas oculpadas",
-                        cardColor = SecondaryBlue,
+                        color = SecondaryBlue,
                         textColor = White
                     )
                     Spacer(modifier = Modifier.height(20.dp))

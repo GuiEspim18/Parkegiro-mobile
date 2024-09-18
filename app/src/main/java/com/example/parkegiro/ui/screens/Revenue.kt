@@ -11,8 +11,17 @@ import com.example.parkegiro.ui.theme.White
 @Composable
 fun Revenue() {
     Column {
-        ScrollContentHolder(title = "Faturamento", icon = R.drawable.money, divider = false) {
-            DoubleTextCard(firstText = "GBR-9F90", secondText = "Entrada: 08:00 - Saída: 18:00", cardColor = MainBlue, textColor = White)
+        ScrollContentHolder(
+            title = "Faturamento",
+            icon = R.drawable.money,
+            divider = false
+        ) {
+            DoubleTextCard(
+                firstText = "GBR-9F90",
+                secondText = "Entrada: 08:00 - Saída: 18:00",
+                color = MainBlue,
+                textColor = White
+            )
         }
     }
 }

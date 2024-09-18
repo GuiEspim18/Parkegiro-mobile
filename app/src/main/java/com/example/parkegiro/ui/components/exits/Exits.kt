@@ -23,7 +23,7 @@ fun Exits() {
         DoubleTextCard(
             firstText = "GBR-9F90",
             secondText = "Entrada: 08:30 - Saída: 18:00",
-            cardColor = White,
+            color = White,
             actions = listOf(
                 {
                     IconButton(icon = R.drawable.edit, iconSize = 19.dp, iconColor = Orange, onClick = { /*TODO*/ })
