@@ -7,9 +7,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Content(content: @Composable () -> Unit) {
+fun Content(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
     Column(
-        modifier = Modifier.padding(horizontal = 15.dp)
+        modifier = modifier.then(
+            Modifier.padding(horizontal = 15.dp)
+        )
     ) {
         content()
     }
