@@ -24,7 +24,7 @@ import com.example.parkegiro.ui.theme.Gray
 import com.example.parkegiro.ui.theme.MainBlue
 
 @Composable
-fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = Gray, textColor: Color = MainBlue, firstTextSize: TextUnit = 25.sp, secondTextSize: TextUnit = 20.sp, actions: List<@Composable () -> Unit>? = null) {
+fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = Gray, textColor: Color = MainBlue, firstTextSize: TextUnit = 25.sp, secondTextSize: TextUnit = 20.sp, additionalContent: @Composable () -> Unit = {}, actions: List<@Composable () -> Unit>? = null) {
     Card(
         modifier = Modifier
             .fillMaxWidth(),
@@ -71,6 +71,12 @@ fun DoubleTextCard(firstText: String, secondText: String, cardColor: Color = Gra
                     actions.forEach{action ->
                         action()
                     }
+                }
+            }
+
+            if (additionalContent != {}) {
+                Column {
+                    additionalContent()
                 }
             }
         }
