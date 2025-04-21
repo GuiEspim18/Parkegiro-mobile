@@ -1,30 +1,29 @@
-import { useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import React from "react";
 import { Pressable } from "react-native";
-import { RootStackParamList } from "../../Content";
+import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "../../Content"; // Importando o tipo de parâmetros da sua navegação
 
 type RouteName = keyof RootStackParamList;
 
-type IconButtonProps<Route extends RouteName = RouteName> = {
-  children: React.ReactNode;
-  routeName: Route;
-  params?: RootStackParamList[Route];
+type IconButtonProps<Route extends RouteName> = {
+  children: React.ReactNode; // O conteúdo que será passado dentro do IconButton
+  routeName: Route; // O nome da rota que o botão vai navegar
+  params?: RootStackParamList[Route]; // Parâmetros opcionais para a rota
 };
 
 function IconButton<Route extends RouteName>({
-  children,
   routeName,
   params,
+  children
 }: IconButtonProps<Route>): React.JSX.Element {
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   const handlePress = () => {
-    // Se tiver params, passa com params, se não, passa sem
-    if (params !== undefined) {
-      navigation.navigate(routeName as any, params);
+    if (params === undefined) {
+      navigation.navigate(routeName as any); // Navegar sem parâmetros
     } else {
-      navigation.navigate(routeName as any); // precisa de 'as any' pra evitar conflito de overload
+      navigation.navigate(routeName as any, params); // Navegar com parâmetros
     }
   };
 
