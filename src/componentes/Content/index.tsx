@@ -6,7 +6,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../../pages/Home';
 import ParkingLot from '../../pages/ParkingLot';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ScreenProps } from 'react-native-screens';
 
 export type RootStackParamList = {
@@ -14,23 +13,28 @@ export type RootStackParamList = {
     ParkingLot: { userId: number; name: string };
 };
 
-const Tab = createBottomTabNavigator<RootStackParamList>();
+const Tab = createNativeStackNavigator<RootStackParamList>();
 
 
 
 function Content(): React.JSX.Element {
     return (
-        <NavigationContainer>
+        <NavigationContainer
+        >
             <View style={styles.content}>
                 <Tab.Navigator initialRouteName="Home">
-                    <Tab.Screen name="Home" component={Home} />
+                    <Tab.Screen 
+                        name="Home" 
+                        component={Home} 
+                        options={{ headerShown: false }}
+                    />
                     <Tab.Screen
                         name="ParkingLot"
                         component={ParkingLot}
-                        initialParams={{ userId: 123, name: 'John Doe' }} // Passando parâmetros
+                        options={{ headerShown: false }}
                     />
                 </Tab.Navigator>
-                <NavMenu /> {/* O NavMenu pode ficar fora do Stack.Navigator */}
+                <NavMenu /> 
             </View>
         </NavigationContainer>
     )
